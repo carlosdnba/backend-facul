@@ -2,13 +2,13 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-import routes from './ex-2/routes';
+import router from './ex-2/router';
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(routes);
+app.use(router);
 
 app.listen(3333, () => {
   console.clear();
